@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import About from "./components/about/About";
 import Footer from "./components/footer/Footer";
 import Section from "./components/section/Section";
+import Home from './components/home/Home';
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => {
 
         {/* About Page */}
         <Route path="/about" element={<About />} />
+        <Route path='/home' element={<Home/>}/>
       </Routes>
 
       {/* Footer always visible */}
